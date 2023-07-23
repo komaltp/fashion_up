@@ -5,15 +5,203 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
-header {
-  background-color: #404040;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Kaushan+Script&family=Koulen&family=Tapestry&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+
+
+
+  
+  list-style: none;
+  
+
+
+
+  font-family: "Comfortaa", cursive;
+
+  font-weight: bold;
+
+  text-decoration: none;
+  color: rgb(15, 1, 1);
+  
+  
+  font-weight: bold;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: rgb(15, 1, 1);
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+  font-weight: bold;
+}
+
+.nav-link:hover{
+  background-color: rgb(2, 0, 0);
+  color: rgb(241, 232, 232);
+  box-shadow: 0 0 10px rgb(1, 0, 0);
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+/*home*/
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 713px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url("121920.jpg") no-repeat center center/cover;
+  margin: -88px -120px;
+}
+
+h2 {
+  font-weight: bold;
+  background: linear-gradient(
+    90deg,
+    rgb(8, 8, 8),
+    rgb(206, 174, 11),
+    rgb(15, 15, 15)
+  );
+  font-family: "Dancing Script", cursive;
+  font-size: 6vh;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+p1 {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 8em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, rgb(212, 179, 15), #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0vh;
+}
+
+.centered-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75)
+}
+.logo{
+  font-size: 29px;
+  font-family: "Dancing Script", cursive;
+
+}
+.logo:hover{
+  pointer-events: fill;
+  
+}
+
+
+
+
+
+
+
+
+
+.small-container {
+  max-width: 600px;
+}
+
+.site-container{
+min-height: 100vh;;
+}
+.rating span {
+  color: #ffc000;
+}
+.btn-primary {
+  background-color: #f0c040;
+  color: #000000;
+}
+.img-large {
+  max-width: 100%;
+}
+
+.img-thumbnail {
+  height: 80px;
+}
+
+main{
+  flex: 1;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 91px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+.product{
+ border: 1px #404040 solid;
+ margin: 1rem;
+}
+.product img{
+  width:100%;
+  max-width:400px;
+}
+.product-info{
   padding: 1rem;
 }
 
-header a {
-  color:aliceblue;
-  font-weight: bold;
-  text-decoration: none;
+.checkout-steps > div {
+  border-bottom: 0.2rem solid #a0a0a0;
+  color: #a0a0a0;
+}
+.checkout-steps > div.active {
+  border-bottom: 0.2rem solid #f08000;
+  color: #f08000;
 }
